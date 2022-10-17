@@ -28,7 +28,7 @@
               </div>
 
             </div>
-              <div class="float-right mb-1">
+              <div class="float-right mb-1 ar-left">
 
               <a href="{{ route('seller.category.create') }}" class="btn btn-primary">{{ __('Create Category') }}</a>
 

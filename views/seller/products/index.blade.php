@@ -34,16 +34,16 @@ $url=domain_info('full_domain');
 			</div>
 			<div class="col-lg-4">
 
-				<a href="#" class="btn btn-info float-right mr-3" data-toggle="modal" data-target="#import">{{ __('Import') }}</a>
+				<a href="#" class="btn btn-info float-right mr-3 ar-left" data-toggle="modal" data-target="#import">{{ __('Import') }}</a>
 
-				<div class="float-right mr-3">
+				<div class="float-right mr-3 ar-left">
 					<a href="{{ route('seller.product.create') }}" class="btn btn-primary float-right">{{ __('Add New') }}</a>
 				</div>
 
 			</div>
 		</div>
 		<br>
-		<div class="float-right">
+		<div class="float-right ar-left">
 			<form>
 				<div class="input-group mb-2">
 
@@ -61,7 +61,7 @@ $url=domain_info('full_domain');
 		</div>
 		<form method="post" action="{{ route('seller.product.destroy') }}" class="basicform">
 			@csrf
-			<div class="float-left">
+			<div class="float-left ar-right">
 				<div class="input-group">
 					<select class="form-control selectric" name="method">
 						<option disabled selected="">{{ __('Select Action') }}</option>
