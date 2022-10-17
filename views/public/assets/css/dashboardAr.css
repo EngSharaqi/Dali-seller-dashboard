@@ -2,6 +2,8 @@ body {
     direction: rtl !important;
     text-align: right;
 }
+.float-left { float: right !important }
+.float-right { float: left !important }
 /* content */
 .main-content {
     padding-right: 280px;
@@ -16,6 +18,11 @@ body {
 .mr-auto, .mx-auto {
     margin-right: 0 !important;
     margin-left: auto !important;
+}
+
+.dropdown-menu-right {
+    left: 0;
+    right: auto;
 }
 
 .form-inline.mr-auto ul.navbar-nav.mr-3 {
@@ -40,6 +47,11 @@ body.sidebar-mini .main-sidebar:after {
     transform: rotate(180deg);
 }
 
+.card .card-header h4 {
+    padding-left: 10px;
+    padding-right: 0
+}
+
 /* if aside is mini */
 body.sidebar-mini .navbar {
     right: 65px;
@@ -51,5 +63,92 @@ body.sidebar-mini .main-content, body.sidebar-mini .main-footer {
     padding-right: 90px;
 }
 
+/* if small screen > aside  */
+body.sidebar-gone .main-sidebar {
+    right: -250px;
+}
+
+/* orders */
+.input-group {
+   direction: ltr;
+}
+
+.card .card-header h4 + .card-header-action .input-group .form-control, .card .card-header h4 + .card-header-form .input-group .form-control { text-align: right }
+
+.card-body .float-left {
+    float: right !important;
+}
+
+/* filter */
+.modal-header .close { margin: -1rem auto -1rem -1rem }
+
+/* products */
+.section-header {
+    direction: ltr;
+    flex-direction: row-reverse;
+}
+.section .section-header .section-header-breadcrumb {
+    margin-left: 0;
+    margin-right: auto;
+}
+.input-group-text, select.form-control:not([size]):not([multiple]), .form-control:not(.form-control-sm):not(.form-control-lg) { text-align: right }
+.ar-left { float: left !important }
+.ar-right { float: right !important }
+
+/* ck-editor */
+.cke_editable { text-align: right }
+
+.accordion-header.h-50 .float-right { float: left !important }
+table.table.table-hover.table-nowrap.card-table .text-right { float: initial; text-align: left !important }
+table.table.table-hover.table-nowrap.card-table button.btn.btn-primary.edit { margin-left: 10px }
+
+/* inventory */
+.edit-product-quantity.float-right { float: left !important }
+
+/* orders > show */
+.ml-2, .mx-2 {
+    margin-left: 0;
+    margin-right: .5rem !important;
+    float: right !important;
+}
+a.btn.btn-primary.text-right.float-right.mt-2 {
+    float: right !important;
+    margin-right: .5rem;
+}
+.text-right form.d-inline.basicform {
+    display: flex !important;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    direction: rtl;
+    justify-content: start;
+}
+.text-right form.d-inline.basicform label {
+    margin: 0 5px 0 .5rem;
+    order: -1;
+}
+.text-right form.d-inline.basicform input#vehicle3 { margin: 0 .5rem 0 0 }
 /* footer */
 .main-footer { padding: 20px 280px 20px 30px }
+
+/* media */
+@media(max-width: 1024px) {
+    .main-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100% !important;
+    }
+    .main-sidebar {
+        position: fixed !important;
+        margin-top: 0 !important;
+        z-index: 891;
+    }
+    .navbar {
+        right: 5px;
+        left: 0;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu-right {
+        left: 0;
+        right: auto;
+    }
+}  
