@@ -133,6 +133,17 @@ a.btn.btn-primary.text-right.float-right.mt-2 {
 
 /* media */
 @media(max-width: 1024px) {
+    /* submit bar (generall) */
+    .custSubmitBar {
+        width: 100%;
+        float: none;
+    }
+
+    /* general float */
+    .float-right { float: right !important }
+    .float-left { float: left !important }
+
+    /* main */
     .main-content {
         padding-left: 30px;
         padding-right: 30px;
@@ -160,7 +171,7 @@ a.btn.btn-primary.text-right.float-right.mt-2 {
     .card-header h4 { width: 100% }
     form.card-header-form { width: 70% !important }
     button.btn.btn-sm.btn-primary.ml-1 {
-        width: 25%;
+        /* width: 25%; */
         max-width: 25%;
     }
 
@@ -168,4 +179,44 @@ a.btn.btn-primary.text-right.float-right.mt-2 {
     .orderSelectF { padding-top: 0 !important }
     .selectF { width: 100%; margin-bottom: 1rem !important }
     .selectF select option { text-align: right }
+    
+    a.mr-2.btn.btn-outline-success,
+    a.mr-2.btn.btn-outline-info,
+    a.mr-2.btn.btn-outline-warning,
+    a.mr-2.btn.btn-outline-danger {
+        margin-bottom: .8rem !important;
+    }
+
+    /* product */
+    .filtersF, .inventory .controllers  {
+        display: flex;
+        overflow-x: auto;
+        padding: 0 1rem;
+        width: 100%
+    }
+    .productF a.btn.btn-primary.float-right, .productF a.btn.btn-info.float-right.mr-3.ar-left { margin-top: 1rem }
+    .importF { display: flex }
+
+    .productF .float-left.ar-right {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    /* inventory */
+    .inventory .controllers { margin-bottom: 1rem }
+    .inventory .controllers a { margin-left: 10px; min-width: 100px }
+    .inventory .float-right { float: none !important; width: 100% !important}
+
+    /* customer */
+    .customerShow ul.list-group {
+        padding-right: 0;
+    }
+
+    /* marketing */
+    .section-header-breadcrumb {
+        width: 100%;
+        padding: 0 1rem;
+        overflow-y: auto;
+        white-space: nowrap;
+    }
 } 
