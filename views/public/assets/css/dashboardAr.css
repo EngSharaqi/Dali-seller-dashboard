@@ -151,4 +151,21 @@ a.btn.btn-primary.text-right.float-right.mt-2 {
         left: 0;
         right: auto;
     }
-}  
+    a.btn.btn-primary.float-right {
+        width: 100%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    ul.nav.nav-pills { padding: 0 }
+    .card-header h4 { width: 100% }
+    form.card-header-form { width: 70% !important }
+    button.btn.btn-sm.btn-primary.ml-1 {
+        width: 25%;
+        max-width: 25%;
+    }
+
+    /* order */
+    .orderSelectF { padding-top: 0 !important }
+    .selectF { width: 100%; margin-bottom: 1rem !important }
+    .selectF select option { text-align: right }
+} 
