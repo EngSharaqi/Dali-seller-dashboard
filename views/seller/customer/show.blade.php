@@ -3,7 +3,7 @@
 @include('layouts.partials.headersection',['title'=>'Customer Info'])
 @endsection
 @section('content')
-<div class="row">
+<div class="row customerShow">
 	<div class="col-sm-6">
 		<div class="card">
 			<div class="card-body">

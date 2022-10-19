@@ -9,7 +9,7 @@
       <div class="card-body">
           <form method="post" action="{{ route('seller.shipping.destroy') }}" class="basicform_with_reload">
             @csrf
-            <div class="float-left mb-1">
+            <div class="float-left mb-1 custSubmitBar">
 
               <div class="input-group">
                 <select class="form-control" name="method">

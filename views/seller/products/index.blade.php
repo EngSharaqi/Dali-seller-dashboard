@@ -19,10 +19,10 @@ $url=domain_info('full_domain');
 </div>
 @endif
 <div class="card @if($type==1) card-success @elseif($type==2) card-info @elseif($type==3) card-warning @elseif($type== 0 && $type != 'all') card-danger @endif">
-	<div class="card-body">
+	<div class="card-body productF">
 		<div class="row mb-2">
 			<div class="col-lg-8">
-				<div class="">
+				<div class="filtersF">
 
 					<a href="{{ route('seller.product.list',1) }}" class="mr-2 btn btn-outline-success @if($type==1) active @endif">{{ __('Publish') }} ({{ $actives }})</a>
 
@@ -32,7 +32,7 @@ $url=domain_info('full_domain');
 					<a href="{{ route('seller.product.list',0) }}" class="mr-2 btn btn-outline-danger @if($type== 0 && $type != 'all') active @endif">{{ __('Trash') }} ({{ $trash }})</a>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 importF">
 
 				<a href="#" class="btn btn-info float-right mr-3 ar-left" data-toggle="modal" data-target="#import">{{ __('Import') }}</a>
 

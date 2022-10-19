@@ -12,7 +12,7 @@
                 <div class="card-body">
                 	<form method="post" action="{{ route('seller.reviews.destroy') }}" class="basicform_with_reload">
                 		@csrf
-                		<div class="float-left mb-2">
+                		<div class="float-left mb-2 custSubmitBar">
                 			<div class="input-group">
                 				<select class="form-control selectric" name="method">
                 					<option disabled selected="">{{ __('Select Action') }}</option>

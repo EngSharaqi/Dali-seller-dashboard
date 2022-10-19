@@ -3,14 +3,14 @@
 @include('layouts.partials.headersection',['title'=>'Inventory'])
 @endsection
 @section('content')
-<div class="row">
+<div class="row inventory">
   <div class="col-12 mt-2">
     <div class="card">
       <div class="card-body">
         @php
         $url=domain_info('full_domain');
         @endphp
-        <div class="float-left">
+        <div class="float-left controllers">
 
            <a href="{{ route('seller.inventory.index') }}" class="btn  btn-outline-primary @if($status == '') active @endif">{{ __('Total') }} ({{ $total }})</a>
            <a href="?status=in" class="btn  btn-outline-success @if($status=='in') active @endif">{{ __('In Stock') }}({{ $in_stock }})</a>

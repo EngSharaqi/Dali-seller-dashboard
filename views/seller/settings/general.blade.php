@@ -309,7 +309,7 @@
                     </div> 
 
                     <label>{{ __('Social Links') }}</label>
-                <table class="table table-bordered table-striped" id="user_table">
+                <table class="table table-responsive table-bordered table-striped" id="user_table">
                  <thead>
                     <tr>
                         <th width="35%">{{ __('Url') }}</th>
