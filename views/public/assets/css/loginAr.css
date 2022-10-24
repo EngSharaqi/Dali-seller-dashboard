@@ -1,0 +1,13 @@
+.login, .login input {
+    text-align: right !important;
+}
+
+.login .card-header {
+    justify-content: end;
+}
+
+.login .custom-control.custom-checkbox {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+}

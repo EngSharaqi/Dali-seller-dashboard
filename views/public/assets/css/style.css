@@ -656,6 +656,7 @@ select.form-control:not([size]):not([multiple]) {
     padding: 15px 25px;
     display: flex;
     align-items: center; }
+    .login .card .card-header { border: 0; border-bottom: 0; padding-bottom: 0 }
     .card .card-header .btn {
       margin-top: 1px;
       padding: 2px 15px; }
@@ -3891,3 +3892,9 @@ a.d-flex {
 .h-50{
   height: 50px !important;
 }
+
+
+
+
+
+
