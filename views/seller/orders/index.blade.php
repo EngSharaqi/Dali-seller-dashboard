@@ -46,7 +46,7 @@
                     </div>
                 @endif
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header ordersAllControllersF">
                         <h4>{{ __('Orders') }}</h4>
 
 
@@ -67,7 +67,7 @@
                         <form method="post" action="{{ route('seller.orders.method') }}" class="basicform">
                             @csrf
 
-                            <div class="float-left">
+                            <div class="float-left custSubmitBar">
                                 @if(count($orders) > 0)
                                     <div class="input-group mb-1">
                                         <select class="form-control selectric" name="method">

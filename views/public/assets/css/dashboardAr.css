@@ -176,16 +176,8 @@ a.btn.btn-primary.text-right.float-right.mt-2 {
     }
 
     /* order */
-    .orderSelectF { padding-top: 0 !important }
-    .selectF { width: 100%; margin-bottom: 1rem !important }
+    .ordersAllControllersF { flex-direction: row }
     .selectF select option { text-align: right }
-    
-    a.mr-2.btn.btn-outline-success,
-    a.mr-2.btn.btn-outline-info,
-    a.mr-2.btn.btn-outline-warning,
-    a.mr-2.btn.btn-outline-danger {
-        margin-bottom: .8rem !important;
-    }
 
     /* product */
     .filtersF, .inventory .controllers  {
@@ -204,7 +196,7 @@ a.btn.btn-primary.text-right.float-right.mt-2 {
     
     /* inventory */
     .inventory .controllers { margin-bottom: 1rem }
-    .inventory .controllers a { margin-left: 10px; min-width: 100px }
+    .inventory .controllers a { margin-right: initial; margin-left: 10px; min-width: 100px }
     .inventory .float-right { float: none !important; width: 100% !important}
 
     /* customer */
@@ -220,3 +212,4 @@ a.btn.btn-primary.text-right.float-right.mt-2 {
         white-space: nowrap;
     }
 } 
+

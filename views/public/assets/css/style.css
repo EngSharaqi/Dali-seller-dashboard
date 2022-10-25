@@ -1782,7 +1782,90 @@ h6 .badge {
       flex-direction: row; }
   .navbar-expand-lg .navbar-nav .dropdown-menu-right {
     right: 0;
-    left: auto; } }
+    left: auto; }
+  
+ 
+  /* general in AR and EN */
+  /* submit bar (generall) */
+  .custSubmitBar {
+    width: 100%;
+    /* float: none; */
+  }
+
+  /* general float */
+  /* .float-right { float: right !important }
+  .float-left { float: left !important } */
+
+  /* main */
+  .main-content {
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 100% !important;
+  }
+  .main-sidebar {
+      position: fixed !important;
+      margin-top: 0 !important;
+      z-index: 891;
+  }
+
+  a.btn.btn-primary.float-right {
+      width: 100%;
+      margin: auto;
+      margin-top: 1rem;
+  }
+
+  ul.nav.nav-pills { padding: 0 }
+  .card-header h4 { width: 100% }
+  form.card-header-form { width: 70% !important }
+  button.btn.btn-sm.btn-primary.ml-1 {
+      /* width: 25%; */
+      max-width: 25%;
+  }
+
+  /* ======================== order  [ DONE ] =============================== */
+  .ordersAllControllersF { justify-content: space-between; flex-direction: row-reverse }
+  .orderSelectF { padding-top: 0 !important }
+  .selectF { width: 100%; margin-bottom: 1rem !important }
+  .selectF select option { text-align: left }
+
+  a.mr-2.btn.btn-outline-success,
+  a.mr-2.btn.btn-outline-info,
+  a.mr-2.btn.btn-outline-warning,
+  a.mr-2.btn.btn-outline-danger { margin-bottom: .8rem !important }
+
+  /* product */
+  .filtersF, .inventory .controllers  {
+      display: flex;
+      overflow-x: auto;
+      padding: 0 1rem;
+      width: 100%
+  }
+  .productF a.btn.btn-primary.float-right, .productF a.btn.btn-info.float-right.mr-3.ar-left { margin-top: 1rem }
+  .importF { display: flex }
+
+  .productF .float-left.ar-right {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  /* inventory */
+  .inventory .controllers { margin-bottom: 1rem }
+  .inventory .controllers a { margin-right: 10px; min-width: 100px }
+  .inventory .float-right { float: none !important; width: 100% !important}
+
+  /* customer */
+  .customerShow ul.list-group {
+      padding-left: 0;
+  }
+
+  /* marketing */
+  .section-header-breadcrumb {
+    width: 100%;
+    padding: 0 1rem;
+    overflow-y: auto;
+    white-space: nowrap;
+  }
+}
 
 /* 3.19 Dropdown */
 .dropdown-item.has-icon i {
@@ -3893,8 +3976,17 @@ a.d-flex {
   height: 50px !important;
 }
 
+/* general on AR and EN */
+@media(min-width: 1024px) {
+  .card-header { 
+      flex-wrap: wrap;
+      justify-content: center
+  }
 
-
-
-
-
+  .card-header h4 { width: 100% }
+  .card .card-header h4 + .card-header-action, .card .card-header h4 + .card-header-form {
+      margin-right: 0;
+      margin-left: 10px;
+  }
+  .card-body .float-left.custSubmitBar { float: none !important; }
+}
