@@ -4070,3 +4070,14 @@ a.d-flex {
     height: auto;
   }
 }
+
+.sidebar-gone div.nicescroll-rails, div.nicescroll-rails {
+  display: none !important;
+}
+
+aside#sidebar-wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  scroll-behavior: smooth;
+}

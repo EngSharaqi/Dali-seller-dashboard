@@ -4,6 +4,7 @@ body {
 }
 .float-left { float: right !important }
 .float-right { float: left !important }
+
 /* content */
 .main-content {
     padding-right: 280px;
@@ -31,6 +32,13 @@ body {
 }
 
 /* aside */
+.sidebar-gone div.nicescroll-rails { right: -100px }
+div.nicescroll-rails, div.nicescroll-rails {
+    right: 240px;
+}
+div.nicescroll-rails .nicescroll-cursors, div.nicescroll-rails .nicescroll-cursors {
+    width: 10px !important;
+}
 .main-sidebar {
     left: initial;
     right: 0;
